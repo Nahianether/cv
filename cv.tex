@@ -1,0 +1,129 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[left=0.6in, right=0.6in, top=0.4in, bottom=0.4in]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Define a custom color
+\definecolor{purple}{RGB}{128, 0, 128}
+\definecolor{linkcolor}{RGB}{0, 102, 204}
+
+% Define a custom section format
+\titleformat{\section}{
+  \normalfont\Large\bfseries\color{purple}
+}{}
+{0em}
+{}[\titlerule\color{purple}\vspace{0.3em}]
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    filecolor=magenta,      
+    urlcolor=linkcolor,
+    pdftitle={Your Title},
+    pdfpagemode=FullScreen,
+}
+
+% Define a custom column type for tabularx
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+
+\begin{document}
+
+\begin{center}
+    \LARGE{\textbf{INTISHAR-UL ISLAM}} \\
+    {\small 
+    \faGithub\ \href{https://github.com/Nahianether}{Nahianether} $\cdot$
+    \faLinkedinSquare\ \href{https://www.linkedin.com/in/nahinxp21}{nahinxp21} $\cdot$ 
+    \faGlobe\ \href{https://intishar.xyz}{intishar.xyz} $\cdot$ 
+    \faEnvelope\ \href{mailto:nahianether3@gmail.com}{nahianether3@gmail.com}
+    \faPhone\ \href{tel:+8801724324832}{01724324832}, \href{tel:+8801687722962}{01687722962}} \\
+
+\end{center}
+\vspace{-5mm}
+
+\section*{Summary}
+\vspace{-4mm}
+Senior Flutter /\& Rust Developer with 5+ years of experience architecting scalable mobile and backend solutions. Currently leading development initiatives at Akij iBOS, specializing in real-time systems, VoIP communication, and enterprise applications. CSE graduate from United International University with expertise in cross-platform development and high-performance system design.
+\vspace{-5mm}
+
+\section*{Skills}
+\vspace{-4mm}
+\textbf{Flutter:} State Management (Riverpod, Provider, Bloc, GetX), DB (Isar, Hive), Multi-Threading, FFI with Rust and C++, Method Channel, Custom Painting, Custom Animation, Background Manager / Workmanager, API integration \\
+\textbf{Rust:} Async programming, Multi-threading, concurrency, SQLx, Platform-specific implementations. Frameworks and Libraries (Axum, SQLx, gRPC, libp2p, WebSocket, Wasm) \\
+\textbf{Programming Languages:} Dart, Java, Android, C / C++, .NET, Python \\
+\textbf{Tools \& Technologies:} Git, Firebase, Docker, Wireshark, LaTeX \\
+\textbf{Signaling / Communication Protocol:} SIP (Session Initiation Protocol), WebSocket, WebRTC, gRPC \\
+\textbf{DB:} Hive, Isar, SQFlite, ClickHouse, MySQL, MongoDB
+\vspace{-5mm}
+
+\section*{Experience}
+\vspace{-4mm}
+\textbf{AKIJ iBOS Limited} \\[2mm]
+\begin{tabularx}{\textwidth}{@{}Y r@{}}
+    \textit{Senior Software Engineer II (Manager)} & \textit{Oct 2024 -- Present} \\[1mm]
+\end{tabularx}
+Projects: Trackforce (User Activity Monitoring), Akij Air, iDialer (VoIP calling app), Air Search \\
+\textbf{Algorithm Generation Limited} \\[2mm]
+\begin{tabularx}{\textwidth}{@{}Y r@{}}
+    \textit{Senior Software Engineer} & \textit{Sep 2023 -- Oct 2024} \\[1mm]
+    \textit{Software Engineer} & \textit{Sep 2022 -- Sep 2023} \\[1mm]
+    \textit{Junior Software Engineer} & \textit{Jun 2021 -- Sep 2022} \\[1mm]
+\end{tabularx}
+Projects: AGGS, GariBook (Client \& Driver), Clerk File Share, Probashi, AG E-commerce, Point Of Sale (POS), Like Dislike (Tinder Copy), Meeting Schedule, Clerk \\
+\begin{tabularx}{\textwidth}{@{}Y r@{}}
+    \textbf{Junior Developer (Flutter), App Coder XYZ} & \textit{Dec 2020 -- May 2021} \\
+    \multicolumn{2}{@{}l@{}}{Projects: Team Wave, D'Arrigo Brothers (DAB)} \\[1mm]
+    
+    \textbf{Junior Mobile Application Developer, Dhaka Boss Pvt. Limited} & \textit{Mar 2020 -- Dec 2020} \\
+    \multicolumn{2}{@{}l@{}}{Projects: Dhaka Boss Merchant App, Dhaka Boss Shopping App, Dhaka Boss Ticketing App} \\[1mm]
+    
+    \textbf{Guest Employee, PiLabs Bd. Limited} & \textit{Oct 2018 -- Jun 2019} \\
+    \multicolumn{2}{@{}l@{}}{Projects: Smart Car Parking System} \\
+\end{tabularx}
+\vspace{-5mm}
+
+\section*{Key Projects}
+\vspace{-4mm} 
+\textbf{Trackforce} \textit{(Rust, WebSocket, WebRTC)} -- Real-time employee activity tracking with kernel-level data collection.\\
+\textbf{Akij Air} \textit{(Flutter)} -- OTA-All-in-one travel solution, allowing you to find and book flights, hotel and more. \\
+\textbf{Air Search} \textit{(Rust, gRPC, HTTP Stream)} -- OTA search engine, process supplier data streams for ticket booking.\\
+\textbf{iDialer - VoIP Calling App} \textit{(Flutter, SIP, WebRTC)} -- Enterprise calling app with conference, forward features \\
+\textbf{GariBook} \textit{(Flutter, Websocket)} -- Ride Sharing(Rent Vehicle) Full-featured with 500K+ downloads \\
+\textbf{Clerk} \textit{(Flutter)} -- ERP Accounting part-Income, Expense, Loan, Liability, GL share, Schedule, Bulk, Payment \\
+\textbf{File Share} \textit{(Rust, Flutter)} -- Enterprise-grade file synchronization system with secure data transfer.\\
+\textbf{Probashi} \textit{(Flutter)} -- A global platform for Bangladeshi expatriates to connect, share, and collaborate opportunities.\\
+\textbf{POS} \textit{(Flutter)} -- Full-featured POS system barcode scanning, inventory control, receipt printing with ERP.\\
+\textbf{Smart Car Parking Management} \textit{(JAVA)} -- Published IEEE research with 95\% detection accuracy
+\vspace{-5mm}
+
+\section*{Education}
+\vspace{-4mm}
+\begin{tabularx}{\textwidth}{@{}Y R@{}}
+    \textbf{Bachelor of Science in CSE} & \textit{Apr 2015 -- Oct 2019} \\
+    \multicolumn{2}{@{}l@{}}{United International University, Madani Avenue, Dhaka} \\[1mm]
+    
+    \textbf{Higher Secondary School Certificate} & \textit{Jan 2013 -- Mar 2014} \\
+    \multicolumn{2}{@{}l@{}}{Govt. Shaheed Bulbul College, Pabna, Rajshahi} \\[1mm]
+    
+    \textbf{Secondary School Certificate} & \textit{Jan 2011 -- Mar 2012} \\
+    \multicolumn{2}{@{}l@{}}{Pabna Zilla School, Pabna, Rajshahi} \\
+\end{tabularx}
+\vspace{-5mm}
+
+\section*{Publications}
+\vspace{-4mm}
+\href{https://ieeexplore.ieee.org/abstract/document/9087513}{\textbf{Smart Car Parking Management System}} \\
+\textbf{Published in:} IEEE International Conference on Robotics, Automation, Artificial Intelligence, and Internet-of-Things (RAAICON - 2019)
+
+\end{document}
