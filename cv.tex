@@ -11,13 +11,15 @@
 \usepackage{titlesec}
 \usepackage{tabularx}
 \usepackage{fontawesome5}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
 
 % Remove page numbers
 \pagestyle{empty}
 
 % Define a custom color
-\definecolor{purple}{RGB}{128, 0, 128}
-\definecolor{linkcolor}{RGB}{0, 102, 204}
+\definecolor{purple}{RGB}{15, 52, 96}
+\definecolor{linkcolor}{RGB}{15, 52, 96}
 
 % Define a custom section format
 \titleformat{\section}{
@@ -55,7 +57,7 @@
 
 \section*{Summary}
 \vspace{-4mm}
-Senior Software Engineer (Manager) with 7+ years building production mobile, desktop, and backend systems in Flutter and Rust. Concurrent leadership roles: full-time at \textbf{AKIJ iBOS} leading a 4--6 engineer team (real-time endpoint monitoring on \textasciitilde 1{,}030 deployments, VoIP across AKIJ Group, public OTA travel; rewrote a Rust gRPC flight-search engine from 20--30s to 4--12s) and freelance \textbf{Full Stack Lead Engineer at PrimeLynx}, leading a 7-engineer/QA/DevOps team across multi-tenant SaaS products. Previously shipped GariBook (500K+ Play Store downloads) and led Probashi (10K downloads in 3--5 months) at Algorithm Generation Limited. CSE graduate, United International University; IEEE publication (RAAICON 2019).
+Senior Software Engineer (Manager) with 7+ years building production mobile, desktop, and backend systems in Flutter and Rust. Currently at \textbf{AKIJ iBOS} leading a 4--6 engineer team across four products: real-time endpoint monitoring on $\sim$1{,}030 deployments, VoIP across AKIJ Group, and a public OTA travel app; rewrote a Rust gRPC flight-search engine from 20--30s to 4--12s. Independent portfolio spans multi-tenant restaurant and inventory SaaS platforms (Rust + Flutter) and complex PostgreSQL schema design (111+ Prisma models). Previously shipped GariBook (500K+ Play Store downloads) and led Probashi (10K downloads in 3--5 months) at Algorithm Generation Limited. CSE graduate, United International University; IEEE publication (RAAICON 2019).
 \vspace{-5mm}
 
 \section*{Skills}
@@ -75,22 +77,11 @@ Senior Software Engineer (Manager) with 7+ years building production mobile, des
 \textit{Senior Software Engineer II (Manager)}
 \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt, parsep=0pt, partopsep=0pt]
     \item Lead a 4--6 engineer team owning four production products across the AKIJ Group: \textbf{Trackforce}, \textbf{iDialer}, \textbf{Akij Air}, and \textbf{Air Search}.
-    \item \textbf{Trackforce} -- Architected an endpoint activity-monitoring platform (Rust + Tauri desktop agent, Axum + ClickHouse backend) now deployed on \textasciitilde1{,}030 endpoints inside AKIJ iBOS and commercialized for external sale; implemented system-level input/screen capture, real-time WebSocket ingestion, image processing pipeline (JPEG/PNG\,$\rightarrow$\,WebP via \texttt{rayon}), and 16 schema migrations supporting columnar analytics.
-    \item \textbf{Air Search} -- \textbf{Reduced flight-search latency from 20--30s to 4--12s} (\textasciitilde 60--80\% faster) by rewriting the supplier-aggregation engine in Rust using Tonic gRPC bidirectional streaming, parallel HTTP fan-out across 6 supplier integrations, AWS S3 audit logging, and MySQL persistence.
+    \item \textbf{Trackforce} -- Architected an endpoint activity-monitoring platform (Rust + Tauri desktop agent, Axum + ClickHouse backend) now deployed on $\sim$1{,}030 endpoints inside AKIJ iBOS and commercialized for external sale; implemented system-level input/screen capture, real-time WebSocket ingestion, image processing pipeline (JPEG/PNG\,$\rightarrow$\,WebP via \texttt{rayon}), and 16 schema migrations supporting columnar analytics.
+    \item \textbf{Air Search} -- \textbf{Reduced flight-search latency from 20--30s to 4--12s} ($\sim$60--80\% faster) by rewriting the supplier-aggregation engine in Rust using Tonic gRPC bidirectional streaming, parallel HTTP fan-out across 6 supplier integrations, AWS S3 audit logging, and MySQL persistence.
     \item \textbf{iDialer (VoIP)} -- Built the Flutter SIP companion app deployed to AKIJ Group calling agents; integrated SIP UA, native CallKit (iOS/Android), embedded OpenVPN client, Hive-backed offline auth state, conference calling, and Riverpod code-generated state management.
     \item \textbf{Akij Air} -- Driving the legacy React Native\,$\rightarrow$\,Flutter migration of the public OTA flight-booking app (currently in soft launch); enforcing strict clean architecture with Riverpod codegen, Freezed pattern matching, GoRouter auth guards, encrypted secure storage, and English/Bangla ARB i18n.
     \item \textbf{Daylens (Rust AI chat-agent / coworker -- in active development)} -- Building an internal AI assistant for AKIJ iBOS on top of the open-source Goose agent framework; customized for company workflow with per-user API keys for multiple AI providers (Anthropic, OpenAI, Google, etc.), local \textbf{Ollama} inference for training on internal company data, and MCP-based tool extensibility (shell execution, file editing, internal-service integrations).
-\end{itemize}
-
-\vspace{1.5mm}
-\noindent\textbf{PrimeLynx} \hfill \textit{Dec 2025 -- Present \textbar{} Freelance, concurrent with AKIJ iBOS}\\
-\textit{Full Stack Lead Engineer / Principal Architect}
-\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt, parsep=0pt, partopsep=0pt]
-    \item Lead a \textbf{7-person team} (developers, QA, DevOps) at a BD-based product firm serving global clients; own end-to-end architecture, database design, and Flutter + Rust implementation; plan and review TypeScript/Node deliverables built by the team.
-    \item \textbf{Happy Restaurant Suite} \textit{(Flutter + Rust/Axum + PostgreSQL)} -- Architected and built end-to-end: Rust multi-tenant backend with 22 route modules, WebSocket-driven kitchen-order push, recipe-driven inventory auto-deduction, and multi-branch P\&L; paired with a 34-screen Flutter admin app (KOT, procurement, staff scheduling) and a 15-screen Flutter customer app (QR table ordering, real-time delivery tracking, loyalty).
-    \item \textbf{Inventory + CRM + POS SaaS} \textit{(Flutter + Rust/Axum + PostgreSQL)} -- Built a multi-tenant SaaS platform: Rust backend with 54 production REST endpoints, Docker-packaged, with subscription jobs, rate limiting, and audit logging; 144-file Flutter client covering multi-location warehouse, batch / lot tracking, supplier performance metrics, and financial analytics.
-    \item \textbf{Qurbani \& CWA} \textit{(Next.js + Express + Prisma + PostgreSQL; DB design + architecture lead)} -- Designed PostgreSQL schemas (111 Prisma models, 96 migrations) and full architectural planning for two web platforms: \textbf{Qurbani} (sacrificial-animal marketplace with Stripe + SSL Commerz payments, BullMQ background jobs, Cloudinary uploads) and \textbf{CWA} (community-association management with multi-tenancy, Arabic/English + Hijri calendar, donations, member lifecycle, grave management, QR-coded ID cards). Implementation by the team to my specifications.
-    \item Additional shipped products: \textbf{Personal Manager} (Flutter + Rust personal finance / task suite with SQLite + Excel/PDF export), tablet \textbf{POS terminal} with thermal printing, barcode scanning, and offline Hive cache, a reusable bulk-SMS Flutter module integrated into the inventory and restaurant suites, and the PrimeLynx portfolio website.
 \end{itemize}
 
 \vspace{1.5mm}
@@ -134,11 +125,17 @@ Senior Software Engineer (Manager) with 7+ years building production mobile, des
     \item Built the Android + SQLite client of the \textbf{Smart Car Parking System} (slot booking, parking release, admin interface) for a CSE thesis research collaboration; integrated system published in \textbf{IEEE RAAICON 2019} with a reported 95\% detection accuracy.
 \end{itemize}
 
-\vspace{1.5mm}
-\noindent\textbf{Freelance \& Volunteer Work}
+\vspace{-3mm}
+
+\section*{Selected Projects}
+\vspace{-4mm}
 \begin{itemize}[leftmargin=*, noitemsep, topsep=2pt, parsep=0pt, partopsep=0pt]
-    \item \textbf{Boycott App} \textit{(Flutter, Isar full-text search, \texttt{flutter\_rust\_bridge} FFI, Google Mobile Ads, i18n)} -- Freelance for a private client; product/brand boycott awareness app with country / category filtering and offline-first storage; Rust-bridged native modules.
-    \item \textbf{COVID-19 District Tracker} \textit{(Flutter, push notifications)} -- Volunteer project aggregating district-level daily COVID death counts from open Bangladeshi data sources; real-time push-notification delivery on data updates via signaller. \textit{Source code lost.}
+    \item \textbf{Happy Restaurant Suite} \textit{(Flutter + Rust/Axum + PostgreSQL)} -- Multi-tenant restaurant SaaS: Rust backend (22 route modules, WebSocket kitchen-order push, recipe-driven inventory auto-deduction, multi-branch P\&L) paired with a 34-screen Flutter admin app (KOT, procurement, staff scheduling) and a 15-screen Flutter customer app (QR table ordering, real-time delivery tracking, loyalty).
+    \item \textbf{Inventory + CRM + POS SaaS} \textit{(Flutter + Rust/Axum + PostgreSQL)} -- Multi-tenant SaaS platform: Rust backend with 54 production REST endpoints, Docker-packaged, with subscription jobs, rate limiting, and audit logging; 144-file Flutter client covering multi-location warehouse, batch / lot tracking, supplier performance metrics, and financial analytics.
+    \item \textbf{Qurbani \& CWA} \textit{(Next.js + Express + Prisma + PostgreSQL -- schema \& architecture lead)} -- Designed PostgreSQL schemas (111 Prisma models, 96 migrations) and architectural blueprints for two web platforms: \textbf{Qurbani} (sacrificial-animal marketplace with Stripe + SSL Commerz, BullMQ jobs, Cloudinary uploads) and \textbf{CWA} (community-association management with multi-tenancy, Arabic/English + Hijri calendar, donations, member lifecycle, grave management, QR-coded ID cards).
+    \item \textbf{Personal Manager + POS Terminal} \textit{(Flutter + Rust)} -- Personal finance / task suite with SQLite + Excel/PDF export; tablet POS terminal with thermal printing, barcode scanning, and offline Hive cache; reusable bulk-SMS Flutter module.
+    \item \textbf{Boycott App} \textit{(Flutter, Isar full-text search, \texttt{flutter\_rust\_bridge} FFI, Google Mobile Ads, i18n)} -- Product/brand boycott awareness app with country / category filtering and offline-first storage; Rust-bridged native modules.
+    \item \textbf{COVID-19 District Tracker} \textit{(Flutter, push notifications)} -- Volunteer project aggregating district-level daily COVID death counts from open Bangladeshi data sources with real-time push delivery on data updates.
 \end{itemize}
 \vspace{-3mm}
 
