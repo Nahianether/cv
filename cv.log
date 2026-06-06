@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.15)  16 MAY 2026 01:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.15)  6 JUN 2026 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -554,27 +554,26 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14986 strings out of 467871
- 253571 string characters out of 5418376
+ 14984 strings out of 467871
+ 253548 string characters out of 5418376
  670597 words of memory out of 5000000
- 43661 multiletter control sequences out of 15000+600000
- 813099 words of font info for 86 fonts, out of 8000000 for 9000
+ 43660 multiletter control sequences out of 15000+600000
+ 812784 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,5n,79p,818b,594s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Ether\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecit
-1000.pk> <C:\Users\Ether\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ectt1000.pk><C:/Users/Ether/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-fontawesome5/FontAwesome5Brands-Regular.pfb><C:/Users/Ether/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users
-/Ether/AppData/Local/Programs/MiKTeX/fonts/type1/typoland/lato/Lato-Bold.pfb><C
-:/Users/Ether/AppData/Local/Programs/MiKTeX/fonts/type1/typoland/lato/Lato-Ital
-ic.pfb><C:/Users/Ether/AppData/Local/Programs/MiKTeX/fonts/type1/typoland/lato/
-Lato-Regular.pfb><C:/Users/Ether/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb><C:/Users/Ether/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmsy9.pfb>
-Output written on cv.pdf (2 pages, 155771 bytes).
+ <C:\Users\Ether\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
+1000.pk><C:/Users/Ether/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontaw
+esome5/FontAwesome5Brands-Regular.pfb><C:/Users/Ether/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/Ether
+/AppData/Local/Programs/MiKTeX/fonts/type1/typoland/lato/Lato-Bold.pfb><C:/User
+s/Ether/AppData/Local/Programs/MiKTeX/fonts/type1/typoland/lato/Lato-Italic.pfb
+><C:/Users/Ether/AppData/Local/Programs/MiKTeX/fonts/type1/typoland/lato/Lato-R
+egular.pfb><C:/Users/Ether/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Users/Ether/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmsy9.pfb>
+Output written on cv.pdf (2 pages, 156411 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
+ 104 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
